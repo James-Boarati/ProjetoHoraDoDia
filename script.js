@@ -2,7 +2,7 @@ function carregar() {
     var msg = window.document.getElementById('msg')
     var img = window.document.getElementById('imagem')
     var data = 20 // new Date()
-    var hora = uhdata.getHours()
+    var hora = data.getHours()
     msg.innerHTML = `Agora são ${hora} horas`
     if (hora >= 0 && hora < 12) {
         img.src = 'fotomanhã.jpg'
